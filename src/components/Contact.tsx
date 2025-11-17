@@ -93,7 +93,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-card-foreground mb-1">Phone</h3>
-                  <p className="text-muted-foreground">(555) 123-4567</p>
+                  <p className="text-muted-foreground">734-291-5619</p>
                 </div>
               </CardContent>
             </Card>
@@ -105,7 +105,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-card-foreground mb-1">Email</h3>
-                  <p className="text-muted-foreground">info@paintingpros.com</p>
+                  <p className="text-muted-foreground">Hikid1330@gmail.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -117,7 +117,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-card-foreground mb-1">Service Area</h3>
-                  <p className="text-muted-foreground">Serving the Greater Metro Area</p>
+                  <p className="text-muted-foreground">7770 Berwick Dr, Ypsilanti</p>
                 </div>
               </CardContent>
             </Card>
