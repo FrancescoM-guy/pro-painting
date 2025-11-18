@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle } from "lucide-react";
+import drivewayBeforeAfter1 from "@/assets/driveway-before-after-1.jpg";
+import drivewayBeforeAfter2 from "@/assets/driveway-before-after-2.jpg";
 
 const PowerWashing = () => {
   const scrollToContact = () => {
@@ -122,6 +124,21 @@ const PowerWashing = () => {
               </Card>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* Before & After Gallery */}
+      <section className="py-16 px-4 bg-secondary/20">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-8 text-center">Before & After</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={drivewayBeforeAfter1} alt="Driveway before and after power washing transformation" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={drivewayBeforeAfter2} alt="Asphalt driveway cleaning before and after comparison" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+          </div>
         </div>
       </section>
 

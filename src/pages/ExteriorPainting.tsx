@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle } from "lucide-react";
+import exteriorHouse1 from "@/assets/exterior-house-1.jpg";
+import exteriorHouse2 from "@/assets/exterior-house-2.jpg";
+import exteriorHouse3 from "@/assets/exterior-house-3.jpg";
 
 const ExteriorPainting = () => {
   const scrollToContact = () => {
@@ -122,6 +125,24 @@ const ExteriorPainting = () => {
               </Card>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* Project Gallery */}
+      <section className="py-16 px-4 bg-secondary/20">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Work</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={exteriorHouse1} alt="Classic colonial house with freshly painted white exterior" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={exteriorHouse2} alt="Victorian style house with painted pastel blue exterior" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={exteriorHouse3} alt="Craftsman style house with painted gray exterior" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+          </div>
         </div>
       </section>
 
