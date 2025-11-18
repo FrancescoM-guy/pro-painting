@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle } from "lucide-react";
 
 const GutterCleaning = () => {
@@ -75,6 +76,52 @@ const GutterCleaning = () => {
               Request Free Estimate
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Tabs Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Why Choose Us
+          </h2>
+          <Tabs defaultValue="quality" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="quality">Quality Work</TabsTrigger>
+              <TabsTrigger value="service">Great Service</TabsTrigger>
+              <TabsTrigger value="perfection">Touch-ups & Perfection</TabsTrigger>
+            </TabsList>
+            <TabsContent value="quality" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Quality Work</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We pride ourselves on delivering exceptional quality in every project. Our experienced team uses professional-grade equipment and proven techniques to ensure outstanding results. From thorough inspections to complete debris removal, we maintain the highest standards of workmanship throughout the entire gutter cleaning process.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="service" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Customer satisfaction is at the heart of everything we do. We provide clear communication, arrive on time, and respect your property. Our team is professional, courteous, and dedicated to making your gutter cleaning experience stress-free. We listen to your needs and work efficiently to minimize disruption to your daily routine.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="perfection" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Touch-ups & Perfection</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We don't consider a job complete until it's perfect. After the main cleaning is finished, we conduct thorough inspections and address any issues to ensure every gutter and downspout meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
