@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle } from "lucide-react";
 
 const ExteriorPainting = () => {
@@ -75,6 +76,52 @@ const ExteriorPainting = () => {
               Request Free Estimate
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Tabs Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+            Why Choose Us
+          </h2>
+          <Tabs defaultValue="quality" className="max-w-4xl mx-auto">
+            <TabsList className="grid w-full grid-cols-3">
+              <TabsTrigger value="quality">Quality Painting</TabsTrigger>
+              <TabsTrigger value="service">Great Service</TabsTrigger>
+              <TabsTrigger value="perfection">Check-ups & Perfection</TabsTrigger>
+            </TabsList>
+            <TabsContent value="quality" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Quality Painting</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We pride ourselves on delivering exceptional quality in every project. Our experienced painters use premium materials and proven techniques to ensure a flawless finish that will last for years. From meticulous surface preparation to the final coat, we maintain the highest standards of craftsmanship throughout the entire painting process.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="service" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We always look out for our customers and provide outstanding service every step of the way. Our team is professional, reliable, and dedicated to ensuring your complete satisfaction. We treat your property with care and respect, always putting your needs first and maintaining clear communication throughout the project.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+            <TabsContent value="perfection" className="mt-6">
+              <Card>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold mb-4">Check-ups & Perfection</h3>
+                  <p className="text-muted-foreground leading-relaxed">
+                    We always do check-ups to make sure everything is done to perfection. After the main painting is finished, we conduct thorough inspections and perform detailed touch-ups to ensure every corner, edge, and surface meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                  </p>
+                </CardContent>
+              </Card>
+            </TabsContent>
+          </Tabs>
         </div>
       </section>
 
