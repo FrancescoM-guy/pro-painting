@@ -5,6 +5,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CheckCircle } from "lucide-react";
+import guttersCleaned1 from "@/assets/gutters-cleaned-1.jpg";
+import guttersCleaned2 from "@/assets/gutters-cleaned-2.jpg";
 
 const GutterCleaning = () => {
   const scrollToContact = () => {
@@ -122,6 +124,21 @@ const GutterCleaning = () => {
               </Card>
             </TabsContent>
           </Tabs>
+        </div>
+      </section>
+
+      {/* Project Gallery */}
+      <section className="py-16 px-4 bg-secondary/20">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold mb-8 text-center">Our Work</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={guttersCleaned1} alt="Clean white gutters after professional cleaning service" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img src={guttersCleaned2} alt="Pristine gutters with clear water flow after maintenance" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+            </div>
+          </div>
         </div>
       </section>
 
