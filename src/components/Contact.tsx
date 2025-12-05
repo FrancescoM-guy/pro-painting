@@ -117,7 +117,8 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-card-foreground mb-1">Service Area</h3>
-                  <p className="text-muted-foreground">7770 Berwick Dr, Ypsilanti</p>
+                  <p className="text-muted-foreground">Washtenaw County, Michigan</p>
+                  <p className="text-muted-foreground text-sm">Ann Arbor, Ypsilanti, Saline & surrounding areas</p>
                 </div>
               </CardContent>
             </Card>
