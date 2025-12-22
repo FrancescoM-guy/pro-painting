@@ -98,7 +98,7 @@ const GutterCleaning = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Quality Work</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We pride ourselves on delivering exceptional quality in every project. Our experienced team uses professional-grade equipment and proven techniques to ensure outstanding results. From thorough inspections to complete debris removal, we maintain the highest standards of workmanship throughout the entire gutter cleaning process.
+                    Clogged gutters can cause real problems—water damage, foundation issues, you name it. We clear everything out properly and make sure water flows the way it should. It's straightforward work, but we do it right so you don't have to worry about it.
                   </p>
                 </CardContent>
               </Card>
@@ -108,7 +108,7 @@ const GutterCleaning = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Customer satisfaction is at the heart of everything we do. We provide clear communication, arrive on time, and respect your property. Our team is professional, courteous, and dedicated to making your gutter cleaning experience stress-free. We listen to your needs and work efficiently to minimize disruption to your daily routine.
+                    We know gutter cleaning isn't exactly exciting, but that doesn't mean it should be a hassle for you. We schedule at times that work for you, show up ready to go, and get the job done without disrupting your day. Easy and stress-free—that's how it should be.
                   </p>
                 </CardContent>
               </Card>
@@ -118,7 +118,7 @@ const GutterCleaning = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Touch-ups & Perfection</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We don't consider a job complete until it's perfect. After the main cleaning is finished, we conduct thorough inspections and address any issues to ensure every gutter and downspout meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                    Before we leave, we double-check that everything's flowing properly and clean up any debris we've removed. We also keep an eye out for any gutter issues and let you know if something needs attention. You'll have peace of mind knowing your gutters are good to go.
                   </p>
                 </CardContent>
               </Card>

@@ -100,7 +100,7 @@ const InteriorPainting = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Quality Painting</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We pride ourselves on delivering exceptional quality in every project. Our experienced painters use premium materials and proven techniques to ensure a flawless finish that will last for years. From meticulous surface preparation to the final coat, we maintain the highest standards of craftsmanship throughout the entire painting process.
+                    We really care about doing great work—it shows in the details. We use quality paints that actually last, and we take the time to prep surfaces properly so you get a smooth, beautiful finish. Your walls are in good hands with us.
                   </p>
                 </CardContent>
               </Card>
@@ -110,7 +110,7 @@ const InteriorPainting = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Customer satisfaction is at the heart of everything we do. We provide clear communication, arrive on time, and respect your home. Our team is professional, courteous, and dedicated to making your painting experience stress-free. We listen to your needs and work efficiently to minimize disruption to your daily routine.
+                    We get it—having people work in your home can feel like a big deal. That's why we're respectful of your space, show up on time, and keep things tidy as we go. We'll keep you updated and make the whole process as smooth as possible.
                   </p>
                 </CardContent>
               </Card>
@@ -120,7 +120,7 @@ const InteriorPainting = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Touch-ups & Perfection</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We don't consider a job complete until it's perfect. After the main painting is finished, we conduct thorough inspections and perform detailed touch-ups to ensure every corner, edge, and surface meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                    We're a little picky—in a good way. Before we call a job done, we check every edge, corner, and trim line. If something's not quite right, we fix it. We want you to love your freshly painted space, and we won't leave until it's just right.
                   </p>
                 </CardContent>
               </Card>
