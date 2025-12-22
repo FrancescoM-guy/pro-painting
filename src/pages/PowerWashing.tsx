@@ -98,7 +98,7 @@ const PowerWashing = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Quality Work</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We pride ourselves on delivering exceptional quality in every project. Our experienced team uses professional-grade equipment and proven techniques to ensure outstanding results. From careful surface assessment to the final rinse, we maintain the highest standards of workmanship throughout the entire cleaning process.
+                    We really take pride in making your place look its best. Our team knows their stuff when it comes to power washing—we've got the right equipment and we know exactly how much pressure each surface needs. You'll see the difference when we're done, and that clean will last.
                   </p>
                 </CardContent>
               </Card>
@@ -108,7 +108,7 @@ const PowerWashing = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Customer satisfaction is at the heart of everything we do. We provide clear communication, arrive on time, and respect your property. Our team is professional, courteous, and dedicated to making your power washing experience stress-free. We listen to your needs and work efficiently to minimize disruption to your daily routine.
+                    We're easy to work with—plain and simple. We'll show up when we say we will, treat your property like it's our own, and keep you in the loop the whole time. Got questions? Just ask. We're here to make this easy for you, not stressful.
                   </p>
                 </CardContent>
               </Card>
@@ -118,7 +118,7 @@ const PowerWashing = () => {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold mb-4">Touch-ups & Perfection</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We don't consider a job complete until it's perfect. After the main cleaning is finished, we conduct thorough inspections and address any missed spots to ensure every surface meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                    We're not the type to cut corners. Before we pack up, we walk around and make sure everything looks right. If we spot something that needs a little extra attention, we take care of it. We want you happy with the results—that's what matters to us.
                   </p>
                 </CardContent>
               </Card>
