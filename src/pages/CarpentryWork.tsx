@@ -14,47 +14,47 @@ const CarpentryWork = () => {
   };
 
   // EDITABLE: Main service details
-  const serviceTitle = "Carpentry Services";
-  const serviceDescription = "Expert carpentry work to repair, restore, and enhance your home with quality craftsmanship.";
+  const serviceTitle = "Basic Carpentry Repairs";
+  const serviceDescription = "Simple, reliable repairs for decks, boards, and basic wood fixes around your home.";
   
   // EDITABLE: What we offer list
   const offerings = [
-    "Trim and molding installation",
-    "Door and window repairs",
-    "Deck and porch repairs",
-    "Wood rot repair",
-    "Custom shelving",
-    "Cabinet repairs and installation",
+    "Deck board replacements",
+    "Deck railing repairs",
+    "Rotted board replacement",
+    "Loose board repairs",
+    "Step and stair fixes",
+    "Basic wood patching",
   ];
 
   // EDITABLE: Process steps
   const process = [
     {
-      title: "Consultation",
-      description: "Discuss your needs and assess the scope of carpentry work required.",
+      title: "Assessment",
+      description: "We inspect the damaged boards or deck areas that need repair.",
     },
     {
-      title: "Material Selection",
-      description: "Choose quality materials that match your home's style and budget.",
+      title: "Quote",
+      description: "Get a straightforward price for the repair work needed.",
     },
     {
-      title: "Expert Installation",
-      description: "Precise carpentry work with attention to detail and craftsmanship.",
+      title: "Repair",
+      description: "We replace or fix the damaged boards quickly and efficiently.",
     },
     {
-      title: "Finishing",
-      description: "Sanding, staining, or painting to complete your project beautifully.",
+      title: "Cleanup",
+      description: "We clean up and leave your space looking great.",
     },
   ];
 
   // EDITABLE: Why choose us points
   const benefits = [
-    "Skilled craftsmen",
-    "Quality materials",
-    "Precise measurements",
-    "Custom solutions",
-    "Timely completion",
-    "Clean workspace",
+    "Fast turnaround",
+    "Honest pricing",
+    "Quality repairs",
+    "Local & reliable",
+    "No job too small",
+    "Clean work area",
   ];
 
   return (
@@ -89,16 +89,16 @@ const CarpentryWork = () => {
           </h2>
           <Tabs defaultValue="quality" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-3">
-              <TabsTrigger value="quality">Quality Work</TabsTrigger>
-              <TabsTrigger value="service">Great Service</TabsTrigger>
-              <TabsTrigger value="perfection">Touch-ups & Perfection</TabsTrigger>
+              <TabsTrigger value="quality">Quality Repairs</TabsTrigger>
+              <TabsTrigger value="service">Easy Process</TabsTrigger>
+              <TabsTrigger value="perfection">Clean Finish</TabsTrigger>
             </TabsList>
             <TabsContent value="quality" className="mt-6">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold mb-4">Quality Work</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Quality Repairs</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We pride ourselves on delivering exceptional quality in every project. Our skilled craftsmen use premium materials and proven techniques to ensure outstanding results. From precise measurements to expert installation, we maintain the highest standards of workmanship throughout the entire carpentry process.
+                    We focus on doing simple repairs right. Whether it's a few rotted deck boards or a loose step, we use quality materials and make sure the fix lasts. No fancy upsells—just solid, reliable work.
                   </p>
                 </CardContent>
               </Card>
@@ -106,9 +106,9 @@ const CarpentryWork = () => {
             <TabsContent value="service" className="mt-6">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold mb-4">Great Service</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Easy to Work With</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Customer satisfaction is at the heart of everything we do. We provide clear communication, arrive on time, and respect your home. Our team is professional, courteous, and dedicated to making your carpentry experience stress-free. We listen to your needs and work efficiently to minimize disruption to your daily routine.
+                    We show up on time, give you a straight answer on pricing, and get the job done without hassle. Simple repairs shouldn't be complicated—we make it easy.
                   </p>
                 </CardContent>
               </Card>
@@ -116,9 +116,9 @@ const CarpentryWork = () => {
             <TabsContent value="perfection" className="mt-6">
               <Card>
                 <CardContent className="p-6">
-                  <h3 className="text-2xl font-semibold mb-4">Touch-ups & Perfection</h3>
+                  <h3 className="text-2xl font-semibold mb-4">Clean Finish</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    We don't consider a job complete until it's perfect. After the main work is finished, we conduct thorough inspections and perform detailed finishing touches to ensure every detail meets our exacting standards. Your satisfaction is guaranteed, and we'll make sure everything is done to absolute perfection.
+                    We clean up after ourselves and make sure the repaired area looks good. No mess left behind—just a solid repair you can count on.
                   </p>
                 </CardContent>
               </Card>
@@ -133,10 +133,10 @@ const CarpentryWork = () => {
           <h2 className="text-3xl font-bold mb-8 text-center">Our Work</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src={deckFixed1} alt="Beautifully restored wooden deck with professional carpentry work" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+              <img src={deckFixed1} alt="Repaired deck boards with new lumber installed" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
             </div>
             <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src={doorFixed1} alt="Restored wooden front door with detailed carpentry craftsmanship" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
+              <img src={doorFixed1} alt="Fixed deck step and railing repair" className="w-full h-96 object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           </div>
         </div>
@@ -146,7 +146,7 @@ const CarpentryWork = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Our Carpentry Services
+            What We Fix
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
             {offerings.map((offering, index) => (
@@ -185,7 +185,7 @@ const CarpentryWork = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-            Why Choose Our Carpentry Work
+            Why Choose Us
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
