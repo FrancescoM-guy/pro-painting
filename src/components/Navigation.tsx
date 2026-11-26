@@ -7,7 +7,7 @@ export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
-  const goToSection = (id: "services" | "contact" | "referral") => {
+  const goToSection = (id: "services" | "contact") => {
     if (location.pathname === "/") {
       document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     } else {
@@ -32,12 +32,6 @@ export const Navigation = () => {
             <button onClick={() => goToSection("services")} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
               Services
             </button>
-            <button onClick={() => goToSection("referral")} className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
-              Refer a Friend
-            </button>
-            <Link to="/help" className={`text-sm font-medium transition-colors hover:text-primary ${location.pathname.startsWith("/help") ? "text-primary" : "text-muted-foreground"}`}>
-              AI Help
-            </Link>
             <Button onClick={() => goToSection("contact")}>Get Quote</Button>
           </div>
 
@@ -58,9 +52,6 @@ export const Navigation = () => {
             </Link>
             <button onClick={() => goToSection("services")} className="block py-2 text-sm font-medium text-muted-foreground">
               Services
-            </button>
-            <button onClick={() => goToSection("referral")} className="block py-2 text-sm font-medium text-muted-foreground">
-              Refer a Friend
             </button>
             <Link to="/help" onClick={() => setIsOpen(false)} className="block py-2 text-sm font-medium text-muted-foreground">
               AI Help

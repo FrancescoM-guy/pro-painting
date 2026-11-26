@@ -1,11 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-painting.jpg";
-import { useSiteImage } from "@/hooks/use-site-images";
 
 export const Hero = () => {
-  const hero = useSiteImage("hero", heroImage);
-
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
@@ -14,7 +11,7 @@ export const Hero = () => {
     <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${hero})` }}
+        style={{ backgroundImage: `url(${heroImage})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
       </div>
