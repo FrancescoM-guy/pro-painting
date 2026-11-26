@@ -63,9 +63,10 @@ const ExteriorPainting = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-20">
+      <section className="bg-primary text-primary-foreground py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
+            <div className="h-1.5 w-16 bg-accent rounded-full mb-6 mx-auto" />
             <h1 className="text-4xl md:text-5xl font-bold mb-6">{serviceTitle}</h1>
             <p className="text-lg md:text-xl mb-8 text-primary-foreground/90">
               {serviceDescription}
@@ -74,7 +75,7 @@ const ExteriorPainting = () => {
               size="lg" 
               variant="secondary"
               onClick={scrollToContact}
-              className="text-lg"
+              className="text-lg bg-accent text-accent-foreground hover:bg-accent/90"
             >
               Request Free Estimate
             </Button>
@@ -133,14 +134,14 @@ const ExteriorPainting = () => {
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-3xl font-bold mb-8 text-center">Our Work</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src={exteriorHouseCorner} alt="Corner view of two-story house with white siding and navy blue trim" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            <div className="overflow-hidden rounded-lg border border-border">
+              <img src={exteriorHouseCorner} alt="Corner view of two-story house with white siding and navy blue trim" className="w-full h-64 object-cover" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src={exteriorHouseDetail} alt="Close-up of freshly painted window trim and siding detail" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            <div className="overflow-hidden rounded-lg border border-border">
+              <img src={exteriorHouseDetail} alt="Close-up of freshly painted window trim and siding detail" className="w-full h-64 object-cover" />
             </div>
-            <div className="overflow-hidden rounded-lg shadow-lg">
-              <img src={exteriorHouseSide} alt="Side angle view of ranch home with beige paint and brown shutters" className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300" />
+            <div className="overflow-hidden rounded-lg border border-border">
+              <img src={exteriorHouseSide} alt="Side angle view of ranch home with beige paint and brown shutters" className="w-full h-64 object-cover" />
             </div>
           </div>
         </div>
@@ -171,7 +172,7 @@ const ExteriorPainting = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {process.map((step, index) => (
-              <Card key={index} className="border-none shadow-lg">
+              <Card key={index} className="border border-border">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xl font-bold mb-4">
                     {index + 1}
@@ -193,7 +194,7 @@ const ExteriorPainting = () => {
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {benefits.map((benefit, index) => (
-              <Card key={index} className="border-none shadow-lg">
+              <Card key={index} className="border border-border">
                 <CardContent className="p-6 flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <span className="text-foreground font-medium">{benefit}</span>

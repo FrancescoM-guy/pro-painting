@@ -21,17 +21,16 @@ export const Navigation = () => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // If not on home page, navigate to home with hash
       window.location.href = '/#contact';
     }
     setIsOpen(false);
   };
 
   return (
-    <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+    <nav className="bg-background border-b border-border border-b-2 border-b-accent sticky top-0 z-50">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
+          <Link to="/" className="flex items-center gap-2 font-bold text-lg text-primary">
             <PaintBucket className="h-6 w-6" />
             <span>Pro Painting</span>
           </Link>
@@ -42,16 +41,18 @@ export const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium ${
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-muted-foreground"
+                    : "text-muted-foreground hover:text-primary"
                 }`}
               >
                 {link.name}
               </Link>
             ))}
-            <Button onClick={scrollToContact}>Get Quote</Button>
+            <Button onClick={scrollToContact} className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Get Quote
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -70,13 +71,13 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden py-4 space-y-3 border-t border-border">
+          <div className="lg:hidden py-4 space-y-2 border-t border-border">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`block py-2 text-sm font-medium transition-colors ${
+                className={`block py-2 text-sm font-medium ${
                   location.pathname === link.path
                     ? "text-primary"
                     : "text-muted-foreground"
@@ -85,7 +86,7 @@ export const Navigation = () => {
                 {link.name}
               </Link>
             ))}
-            <Button onClick={scrollToContact} className="w-full">
+            <Button onClick={scrollToContact} className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
               Get Quote
             </Button>
           </div>

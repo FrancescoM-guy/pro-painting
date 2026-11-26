@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-painting.jpg";
 
 export const Hero = () => {
@@ -8,41 +7,41 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-primary/60" />
-      </div>
-      
-      <div className="container relative z-10 mx-auto px-4 py-20">
-        <div className="max-w-3xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
-            Transform Your Home with Professional Painting Services
-          </h1>
-          <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-            Expert interior & exterior painting, power washing, gutter cleaning, and carpentry. 
-            Quality craftsmanship you can trust.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="text-lg group"
-              onClick={scrollToContact}
-            >
-              Get Free Quote
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="text-lg bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground"
-              onClick={scrollToContact}
-            >
-              Call Us Today
-            </Button>
+    <section className="bg-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-16 md:py-20">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
+          <div>
+            <div className="h-1.5 w-16 bg-accent rounded-full mb-6" />
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-5">
+              Transform Your Home with Professional Painting
+            </h1>
+            <p className="text-lg text-primary-foreground/90 mb-8 leading-relaxed">
+              Interior &amp; exterior painting, power washing, gutter cleaning, and carpentry.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button
+                size="lg"
+                variant="secondary"
+                className="text-base bg-accent text-accent-foreground hover:bg-accent/90"
+                onClick={scrollToContact}
+              >
+                Get Free Quote
+              </Button>
+              <a
+                href="tel:7342915619"
+                className="inline-flex items-center justify-center h-12 px-6 rounded-md border border-primary-foreground/40 text-primary-foreground text-base font-medium hover:bg-primary-foreground/10"
+              >
+                Call 734-291-5619
+              </a>
+            </div>
+          </div>
+
+          <div className="rounded-lg overflow-hidden border-4 border-accent">
+            <img
+              src={heroImage}
+              alt="Freshly painted home exterior"
+              className="w-full h-64 lg:h-80 object-cover"
+            />
           </div>
         </div>
       </div>
