@@ -30,7 +30,7 @@ const services = [
   {
     icon: Hammer,
     title: "Carpentry Repairs",
-    description: "Simple board replacements, deck repairs, and wood fixes.",
+    description: "Board replacements, deck repairs, and wood fixes.",
     link: "/carpentry",
   },
 ];

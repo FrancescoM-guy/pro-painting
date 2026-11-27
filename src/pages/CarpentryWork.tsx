@@ -15,7 +15,7 @@ const CarpentryWork = () => {
 
   // EDITABLE: Main service details
   const serviceTitle = "Acclaimed Painting";
-  const serviceDescription = "Simple, reliable repairs for decks, boards, and basic wood fixes around your home.";
+  const serviceDescription = "Reliable repairs for decks, boards, and basic wood fixes around your home.";
   
   // EDITABLE: What we offer list
   const offerings = [
