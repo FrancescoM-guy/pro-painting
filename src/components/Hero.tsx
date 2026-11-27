@@ -41,7 +41,7 @@ export const Hero = () => {
               variant="outline"
               className="text-lg bg-primary-foreground/10 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 hover:text-primary-foreground"
             >
-              <a href="tel:7342915619">Reliable repairs for decks, boards, and basic wood fixes around your home.</a>
+              <a href="tel:7342915619">734-709-2902</a>
             </Button>
           </div>
         </div>

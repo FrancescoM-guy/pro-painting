@@ -93,7 +93,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-card-foreground mb-1">Phone</h3>
-                  <a href="tel:7342915619" className="text-muted-foreground hover:text-primary">734-291-5619</a>
+                  <a href="tel:7342915619" className="text-muted-foreground hover:text-primary">734-709-2902</a>
                 </div>
               </CardContent>
             </Card>
