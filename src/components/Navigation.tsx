@@ -22,7 +22,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-2 font-bold text-xl text-primary">
             <PaintBucket className="h-6 w-6" />
-            <span>Pro Painting</span>
+            <span>Acclaimed Painting</span>
           </Link>
 
           <div className="hidden lg:flex items-center gap-6">

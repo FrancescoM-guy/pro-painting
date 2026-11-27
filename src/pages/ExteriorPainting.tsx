@@ -55,7 +55,7 @@ const ExteriorPainting = () => {
     "Color matching and consultation",
     "Protection from the elements",
     "Increased home value",
-    "Multi-year warranty available",
+    "Free 6-year warranty available",
   ];
 
   return (
